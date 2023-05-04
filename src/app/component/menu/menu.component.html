@@ -1,0 +1,65 @@
+<div class=" flex flex-row transition-all justify-between mr-4 mb-20 md:mr-4 lg:mr-44 md:space-x-6 lg:ml-44 ">
+
+  <div class="flex-none w-4 md:w-3 mt-3 ml-4 transition-all ">
+    <a href="https://www.apple.com/br/">
+      <img src="../../../assets/img/lola e logo/maçã.png" >
+    </a>
+  </div>
+
+  <div class="flex-row hidden mt-3 md:flex md:space-x-8 lg:space-x-11">
+
+    <div class="text-xs cursor-pointer ">Loja
+      <a href="https://www.apple.com/br/store"></a>
+    </div>
+    <div class="text-xs cursor-pointer">Mac
+      <a href="https://www.apple.com/br/mac/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">iPad
+      <a href="https://www.apple.com/br/ipad/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">iPhone
+      <a href="https://www.apple.com/br/watch/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">Watch
+      <a href="https://www.apple.com/br/airpods/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">AirPods
+      <a href="https://www.apple.com/br/airpods/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">TV e Casa
+      <a href="https://www.apple.com/br/tv-home/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">Entretenimento
+      <a href="https://www.apple.com/br/services/"></a>
+    </div>
+    <div class="text-xs cursor-pointer">Acessórios
+       <a href="https://www.apple.com/br/shop/accessories/all"></a>
+    </div>
+    <div class="text-xs cursor-pointer">Suporte
+      <a href="https://support.apple.com/pt-br"></a>
+    </div>
+  </div>
+
+
+  <div class="flex flex-row space-x-8 md:space-x-6 lg:space-x-9 mt-3 md:mr-4 ">
+
+    <div class=" w-4 mt-1 ">
+      <a href="https://www.apple.com/br/">
+        <img src="../../../assets/img/lola e logo/lupa.png" >
+      </a>
+    </div>
+    <div class="w-5  ">
+      <a href="https://www.apple.com/br/">
+        <img src="../../../assets/img/lola e logo/sacola.png" >
+      </a>
+    </div>
+    <div class=" md:hidden" [ngClass]="{'open': menuOpen}">
+      <button class="" (click)="toggleMenu()">
+        <div class="block bg-[#969697] w-[15px] h-[2px] rounded-b-md "></div>
+        <div class="block bg-[#969697] w-[15px] h-[2px] rounded-b-md mt-1 mb-1 "></div>
+      </button>
+
+    </div>
+  </div>
+
+</div>
