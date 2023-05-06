@@ -39,45 +39,62 @@
 
 
 
-<div class="flex flex-row ml-6 w-[1100px] space-x-6 text-center md:ml-44 transition-all" >
+<<owl-carousel-o [options]="customOptions"class=" flex  text-center md:ml-44 transition-all" >
 
-  <div class="text-sm font-semibold ">
-    <a target="_blank" href="https://www.apple.com/br/shop/buy-mac">
-    <img class=" mb-4" src="../../../assets/img/lola e logo/monitor.png">Mac</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold ">
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/shop/buy-mac">
+      <img class=" mb-4" src="../../../assets/img/lola e logo/monitor.png">Mac</a>
+    </div>
+  </ng-template>
 
-  <div class="text-sm font-semibold ">
-    <a target="_blank" href="https://www.apple.com/br/shop/buy-iphone">
-    <img class=" mb-4" src="../../../assets/img/lola e logo/quatrocell.png">iPhone</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold ">
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/shop/buy-iphone">
+      <img class=" mb-4" src="../../../assets/img/lola e logo/quatrocell.png">iPhone</a>
+    </div>
+  </ng-template>
 
-  <div class="text-sm font-semibold " >
-    <a target="_blank" href="https://www.apple.com/br/shop/buy-ipad">
-    <img class="mb-4" src="../../../assets/img/lola e logo/iped.png" >iPad</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold " >
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/shop/buy-ipad">
+      <img class="mb-4" src="../../../assets/img/lola e logo/iped.png" >iPad</a>
+    </div>
+  </ng-template>
 
-  <div class="text-sm font-semibold " >
-    <a target="_blank" href="https://www.apple.com/br/shop/buy-watch">
-    <img class="mr-6 mb-4" src="../../../assets/img/lola e logo/relógio.png">Apple Watch</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold " >
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/shop/buy-watch">
+      <img class="mr-6 mb-4" src="../../../assets/img/lola e logo/relógio.png">Apple Watch</a>
+    </div>
+  </ng-template>
 
-  <div class="text-sm font-semibold ">
-    <a target="_blank" href="https://www.apple.com/br/airpods/">
-    <img class=" mb-4" src="../../../assets/img/lola e logo/airpods.png" >AirPods</a>
-  </div>
-  <div class="text-sm font-semibold" >
-    <a target="_blank" href="https://www.apple.com/br/shop/accessories/all/airtag">
-    <img class=" mb-4" src="../../../assets/img/lola e logo/raster.png">AirTag</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold ">
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/airpods/">
+      <img class=" mb-4" src="../../../assets/img/lola e logo/airpods.png" >AirPods</a>
+    </div>
+  </ng-template>
 
-  <div class="text-sm font-semibold ">
-    <a target="_blank" href="https://www.apple.com/br/apple-tv-4k/">
-    <img class=" mb-4" src="../../../assets/img/lola e logo/controle.png">Apple TV 4K</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold" >
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/shop/accessories/all/airtag">
+      <img class=" mb-4" src="../../../assets/img/lola e logo/raster.png">AirTag</a>
+    </div>
+  </ng-template>
 
-  <div class="text-sm font-semibold " >
-    <a target="_blank" href="https://www.apple.com/br/shop/accessories/all">
-    <img class=" mb-4" src="../../../assets/img/lola e logo/doisiphones.png" >Acessórios</a>
-  </div>
+  <ng-template carouselSlide class="text-sm font-semibold ">
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/apple-tv-4k/">
+      <img class=" mb-4" src="../../../assets/img/lola e logo/controle.png">Apple TV 4K</a>
+    </div>
+  </ng-template>
 
-</div>
+  <ng-template carouselSlide class="text-sm font-semibold " >
+    <div class="slide w-[130px]">
+      <a target="_blank" href="https://www.apple.com/br/shop/accessories/all">
+      <img class=" mb-4" src="../../../assets/img/lola e logo/doisiphones.png" >Acessórios</a>
+    </div>
+  </ng-template>
+
+</owl-carousel-o>

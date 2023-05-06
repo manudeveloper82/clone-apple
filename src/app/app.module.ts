@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +17,7 @@ import { EducacaoComponent } from './component/educacao/educacao.component';
 import { EspecialistaComponent } from './component/especialista/especialista.component';
 import { LinksComponent } from './component/links/links.component';
 import { FooterComponent } from './component/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,9 @@ import { FooterComponent } from './component/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
