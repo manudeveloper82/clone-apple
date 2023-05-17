@@ -1,0 +1,35 @@
+.menu-icon {
+  width: 24px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-icon-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.md\:hidden {
+  display: none !important;
+}
+
+.md\:block {
+  display: block !important;
+}
+
+.scrolled {
+  background-color: #fff; /* Cor de fundo quando a página é rolada */
+}
+
+.no-scroll {
+  overflow: hidden; /* Desabilita a rolagem do corpo da página */
+}
+
+#menu {
+  background-color: #fff;
+  padding: 20px;
+}

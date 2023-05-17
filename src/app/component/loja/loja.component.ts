@@ -7,6 +7,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./loja.component.css']
 })
 export class LojaComponent {
+  TituloBlack: string ="Loja."
+  TituloGray: string ="O melhor jeito de comprar o que você ama."
 
   constructor() { }
   customOptions: OwlOptions = {
