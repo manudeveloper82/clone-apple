@@ -1,7 +1,7 @@
 <div class=" flex flex-row transition-all justify-between mb-20 md:mr-4 lg:mr-44
-    space-x-8 md:ml-32 lg:ml-44 mr-4 mt-3"[ngClass]="{'menu-fixed': isFixedMenu}">
+    space-x-8 md:ml-32 lg:ml-44 mr-4  "[ngClass]="{'menu-fixed': isFixedMenu}">
 
-  <div class="flex-none w-4 md:w-3 ml-4 transition-all ">
+  <div class="flex-none w-4 md:w-3 ml-4 mt-3 transition-all ">
     <a href="https://www.apple.com/br/">
       <img src="../../../assets/img/lola e logo/maçã.png" >
     </a>
@@ -9,8 +9,8 @@
 
   <div class="block md:flex md:space-x-6 lg:space-x-10 absolute
   bg-white md:relative md:bg-transparent text-3xl md:text-xs
-   font-semibold md:px-n md:py-0 transition-all text-slate-700
-   space-y-4 md:space-y-0
+   font-semibold  transition-all text-slate-700
+   space-y-4 md:space-y-0 py-4 px-8  w-[900px]
  "
  [ngClass]="{'hidden': !menuOpened}">
 
@@ -47,7 +47,7 @@
 </div>
 
 
-<div class="flex flex-row  space-x-6 lg:space-x-9 " >
+<div class="flex flex-row  space-x-6 lg:space-x-9 mt-3 " >
 
  <div class=" w-4 mt-1 ">
    <a href="https://www.apple.com/br/">
@@ -60,13 +60,14 @@
    </a>
  </div>
 
- <div class="block md:hidden cursor-pointer transition-all">
-   <div class="menu-toggle " (click)="toggleMenu()">
-     <span class="block bg-black w-[20px] h-[2px] mt-2" *ngIf="!menuOpened"></span>
-     <span class="block bg-black w-[20px] h-[2px] mt-1" *ngIf="!menuOpened"></span>
-     <span class="block bg-black w-[20px] h-[2px] mt-2" *ngIf="menuOpened"></span>
-     <span class="block bg-black w-[20px] h-[2px] mt-1" *ngIf="menuOpened"></span>
- </div>
+ <div class="block md:hidden cursor-pointer transition-all relative">
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span class="block bg-gray-500 w-[16px] h-[2px] mt-2" *ngIf="!menuOpened"></span>
+    <span class="block bg-gray-500 w-[16px] h-[2px] mt-1" *ngIf="!menuOpened"></span>
+    <span class="rotate-x1 block bg-gray-500 w-[16px] h-[2px] mt-3 mr-4" [ngClass]="{'rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+    <span class="rotate-x2 block bg-gray-500 w-[16px] h-[2px] -mt-0.5 mr-4" [ngClass]="{'-rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+  </div>
+</div>
 
 </div>
 </div>
