@@ -1,69 +1,74 @@
-<div class=" flex flex-row transition-all
-  justify-between mb-20 md:mr-4 lg:mr-44 md:space-x-6 lg:ml-44 "[ngClass]="{'menu-fixed': isFixedMenu}">
+<div class=" flex flex-row transition-all justify-between mb-20 md:mr-4 lg:mr-44
+    space-x-8 md:ml-32 lg:ml-44 mr-4 mt-3"[ngClass]="{'menu-fixed': isFixedMenu}">
 
-  <div class="flex-none w-4 md:w-3 mt-3 ml-4 transition-all ">
+  <div class="flex-none w-4 md:w-3 ml-4 transition-all ">
     <a href="https://www.apple.com/br/">
       <img src="../../../assets/img/lola e logo/maçã.png" >
     </a>
   </div>
 
-  <div class="flex-row hidden mt-3 md:flex md:space-x-8 lg:space-x-10" [ngClass]="{'hidden': !menuOpened}">
+  <div class="block md:flex md:space-x-6 lg:space-x-10 absolute
+  bg-white md:relative md:bg-transparent text-3xl md:text-xs
+   font-semibold md:px-n md:py-0 transition-all text-slate-700
+   space-y-4 md:space-y-0
+ "
+ [ngClass]="{'hidden': !menuOpened}">
 
-    <div class="text-xs cursor-pointer ">Loja
-      <a href="https://www.apple.com/br/store"></a>
-    </div>
-    <div class="text-xs cursor-pointer">Mac
-      <a href="https://www.apple.com/br/mac/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">iPad
-      <a href="https://www.apple.com/br/ipad/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">iPhone
-      <a href="https://www.apple.com/br/watch/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">Watch
-      <a href="https://www.apple.com/br/airpods/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">AirPods
-      <a href="https://www.apple.com/br/airpods/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">TV e Casa
-      <a href="https://www.apple.com/br/tv-home/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">Entretenimento
-      <a href="https://www.apple.com/br/services/"></a>
-    </div>
-    <div class="text-xs cursor-pointer">Acessórios
-       <a href="https://www.apple.com/br/shop/accessories/all"></a>
-    </div>
-    <div class="text-xs cursor-pointer">Suporte
-      <a href="https://support.apple.com/pt-br"></a>
-    </div>
-  </div>
+ <div class=" cursor-pointer ">Loja
+   <a href="https://www.apple.com/br/store"></a>
+ </div>
+ <div class="cursor-pointer">Mac
+   <a href="https://www.apple.com/br/mac/"></a>
+ </div>
+ <div class="cursor-pointer">iPad
+   <a href="https://www.apple.com/br/ipad/"></a>
+ </div>
+ <div class="cursor-pointer">iPhone
+   <a href="https://www.apple.com/br/watch/"></a>
+ </div>
+ <div class="cursor-pointer">Watch
+   <a href="https://www.apple.com/br/airpods/"></a>
+ </div>
+ <div class="cursor-pointer">AirPods
+   <a href="https://www.apple.com/br/airpods/"></a>
+ </div>
+ <div class="cursor-pointer">TV e Casa
+   <a href="https://www.apple.com/br/tv-home/"></a>
+ </div>
+ <div class="cursor-pointer">Entretenimento
+   <a href="https://www.apple.com/br/services/"></a>
+ </div>
+ <div class="cursor-pointer">Acessórios
+    <a href="https://www.apple.com/br/shop/accessories/all"></a>
+ </div>
+ <div class="cursor-pointer">Suporte
+   <a href="https://support.apple.com/pt-br"></a>
+ </div>
+</div>
 
 
-  <div class="flex flex-row space-x-8 md:space-x-6 lg:space-x-9 mt-3 mr-4 md:mr-4" >
+<div class="flex flex-row  space-x-6 lg:space-x-9 " >
 
-    <div class=" w-4 mt-1 ">
-      <a href="https://www.apple.com/br/">
-        <img src="../../../assets/img/lola e logo/lupa.png" >
-      </a>
-    </div>
-    <div class="w-5  ">
-      <a href="https://www.apple.com/br/">
-        <img src="../../../assets/img/lola e logo/sacola.png" >
-      </a>
-    </div>
+ <div class=" w-4 mt-1 ">
+   <a href="https://www.apple.com/br/">
+     <img src="../../../assets/img/lola e logo/lupa.png" >
+   </a>
+ </div>
+ <div class="w-5  ">
+   <a href="https://www.apple.com/br/">
+     <img src="../../../assets/img/lola e logo/sacola.png" >
+   </a>
+ </div>
 
-    <div class="block lg:hidden">
-      <button class="menu-toggle " (click)="toggleMenu()">
-        <svg class="w-6 h-6" *ngIf="!menuOpened">
-          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
-        </svg>
-        <svg class="w-6 h-6" *ngIf="menuOpened">
-          <path d="M3 3h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
-        </svg>
-      </button>
-    </div>
+ <div class="block md:hidden cursor-pointer transition-all">
+   <div class="menu-toggle " (click)="toggleMenu()">
+     <span class="block bg-black w-[20px] h-[2px] mt-2" *ngIf="!menuOpened"></span>
+     <span class="block bg-black w-[20px] h-[2px] mt-1" *ngIf="!menuOpened"></span>
+     <span class="block bg-black w-[20px] h-[2px] mt-2" *ngIf="menuOpened"></span>
+     <span class="block bg-black w-[20px] h-[2px] mt-1" *ngIf="menuOpened"></span>
+ </div>
 
-  </div>
+</div>
+</div>
+
+

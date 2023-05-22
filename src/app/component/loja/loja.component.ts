@@ -35,5 +35,6 @@ export class LojaComponent {
     },
     nav: true
   }
+  
 }
 
