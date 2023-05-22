@@ -8,68 +8,66 @@
   </div>
 
   <div class="block md:flex md:space-x-6 lg:space-x-10 absolute
-  bg-white md:relative md:bg-transparent text-3xl md:text-xs
+   bg-white md:relative md:bg-transparent text-3xl md:text-xs
    font-semibold  transition-all text-slate-700
-   space-y-4 md:space-y-0 py-4 px-8  w-[900px]
- "
- [ngClass]="{'hidden': !menuOpened}">
+   space-y-4 md:space-y-0 py-4 px-8  w-[900px]"
+   [ngClass]="{'hidden': !menuOpened}">
 
- <div class=" cursor-pointer ">Loja
-   <a href="https://www.apple.com/br/store"></a>
- </div>
- <div class="cursor-pointer">Mac
-   <a href="https://www.apple.com/br/mac/"></a>
- </div>
- <div class="cursor-pointer">iPad
-   <a href="https://www.apple.com/br/ipad/"></a>
- </div>
- <div class="cursor-pointer">iPhone
-   <a href="https://www.apple.com/br/watch/"></a>
- </div>
- <div class="cursor-pointer">Watch
-   <a href="https://www.apple.com/br/airpods/"></a>
- </div>
- <div class="cursor-pointer">AirPods
-   <a href="https://www.apple.com/br/airpods/"></a>
- </div>
- <div class="cursor-pointer">TV e Casa
-   <a href="https://www.apple.com/br/tv-home/"></a>
- </div>
- <div class="cursor-pointer">Entretenimento
-   <a href="https://www.apple.com/br/services/"></a>
- </div>
- <div class="cursor-pointer">Acessórios
-    <a href="https://www.apple.com/br/shop/accessories/all"></a>
- </div>
- <div class="cursor-pointer">Suporte
-   <a href="https://support.apple.com/pt-br"></a>
- </div>
-</div>
-
-
-<div class="flex flex-row  space-x-6 lg:space-x-9 mt-3 " >
-
- <div class=" w-4 mt-1 ">
-   <a href="https://www.apple.com/br/">
-     <img src="../../../assets/img/lola e logo/lupa.png" >
-   </a>
- </div>
- <div class="w-5  ">
-   <a href="https://www.apple.com/br/">
-     <img src="../../../assets/img/lola e logo/sacola.png" >
-   </a>
- </div>
-
- <div class="block md:hidden cursor-pointer transition-all relative">
-  <div class="menu-toggle" (click)="toggleMenu()">
-    <span class="block bg-gray-500 w-[16px] h-[2px] mt-2" *ngIf="!menuOpened"></span>
-    <span class="block bg-gray-500 w-[16px] h-[2px] mt-1" *ngIf="!menuOpened"></span>
-    <span class="rotate-x1 block bg-gray-500 w-[16px] h-[2px] mt-3 mr-4" [ngClass]="{'rotate-45': menuOpened}" *ngIf="menuOpened"></span>
-    <span class="rotate-x2 block bg-gray-500 w-[16px] h-[2px] -mt-0.5 mr-4" [ngClass]="{'-rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+    <div class=" cursor-pointer ">Loja
+      <a href="https://www.apple.com/br/store"></a>
+    </div>
+    <div class="cursor-pointer">Mac
+      <a href="https://www.apple.com/br/mac/"></a>
+    </div>
+    <div class="cursor-pointer">iPad
+      <a href="https://www.apple.com/br/ipad/"></a>
+    </div>
+    <div class="cursor-pointer">iPhone
+      <a href="https://www.apple.com/br/watch/"></a>
+    </div>
+    <div class="cursor-pointer">Watch
+      <a href="https://www.apple.com/br/airpods/"></a>
+    </div>
+    <div class="cursor-pointer">AirPods
+      <a href="https://www.apple.com/br/airpods/"></a>
+    </div>
+    <div class="cursor-pointer">TV e Casa
+      <a href="https://www.apple.com/br/tv-home/"></a>
+    </div>
+    <div class="cursor-pointer">Entretenimento
+      <a href="https://www.apple.com/br/services/"></a>
+    </div>
+    <div class="cursor-pointer">Acessórios
+      <a href="https://www.apple.com/br/shop/accessories/all"></a>
+    </div>
+    <div class="cursor-pointer">Suporte
+      <a href="https://support.apple.com/pt-br"></a>
+    </div>
   </div>
-</div>
 
-</div>
+
+  <div class="flex flex-row  space-x-6 lg:space-x-9 mt-3 " >
+
+    <div class=" w-4 mt-1 ">
+      <a href="https://www.apple.com/br/">
+        <img src="../../../assets/img/lola e logo/lupa.png" >
+      </a>
+    </div>
+    <div class="w-5  ">
+      <a href="https://www.apple.com/br/">
+        <img src="../../../assets/img/lola e logo/sacola.png" >
+      </a>
+    </div>
+
+    <div class="block md:hidden cursor-pointer transition-all relative">
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span class="block bg-gray-500 w-[16px] h-[2px] mt-2" *ngIf="!menuOpened"></span>
+        <span class="block bg-gray-500 w-[16px] h-[2px] mt-1" *ngIf="!menuOpened"></span>
+        <span class="rotate-x1 block bg-gray-500 w-[16px] h-[2px] mt-3 mr-4" [ngClass]="{'rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+        <span class="rotate-x2 block bg-gray-500 w-[16px] h-[2px] -mt-0.5 mr-4" [ngClass]="{'-rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+      </div>
+    </div>
+  </div>
 </div>
 
 
