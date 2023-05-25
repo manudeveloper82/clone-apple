@@ -7,9 +7,9 @@
     </a>
   </div>
 
-  <div class="block md:flex md:space-x-6 lg:space-x-10 absolute
+  <div class="block md:flex md:space-x-6 lg:space-x-10 absolute animation-slower
    bg-white md:relative md:bg-transparent text-3xl md:text-xs
-   font-semibold  transition-all text-slate-700 z-10
+   font-semibold  text-slate-800 z-10 transition-all
    space-y-3 md:space-y-0 p-11 md:p-3 w-[900px] h-[1600px] md:h-[0px] "
    [ngClass]="{'hidden': !menuOpened}">
 
@@ -59,12 +59,12 @@
       </a>
     </div>
 
-    <div class="block md:hidden cursor-pointer transition-all ">
+    <div class="block md:hidden cursor-pointer">
       <div class="menu-toggle relative z-10" (click)="toggleMenu()">
-        <span class="block bg-gray-500 w-[16px] h-[2px] mt-2" *ngIf="!menuOpened"></span>
-        <span class="block bg-gray-500 w-[16px] h-[2px] mt-1" *ngIf="!menuOpened"></span>
-        <span class="rotate-x1 block bg-gray-500 w-[16px] h-[2px] mt-3 mr-4" [ngClass]="{'rotate-45': menuOpened}" *ngIf="menuOpened"></span>
-        <span class="rotate-x2 block bg-gray-500 w-[16px] h-[2px] -mt-0.5 mr-4" [ngClass]="{'-rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+        <span class="block bg-gray-500 w-[16px] h-[2px] mt-2 animation-slower" *ngIf="!menuOpened"></span>
+        <span class="block bg-gray-500 w-[16px] h-[2px] mt-1 animation-slower" *ngIf="!menuOpened"></span>
+        <span class="rotate-x1 block bg-gray-500 w-[16px] h-[2px] mt-3 mr-4 animation-slower" [ngClass]="{'rotate-45': menuOpened}" *ngIf="menuOpened"></span>
+        <span class="rotate-x2 block bg-gray-500 w-[16px] h-[2px] -mt-0.5 mr-4 animation-slower" [ngClass]="{'-rotate-45': menuOpened}" *ngIf="menuOpened"></span>
       </div>
     </div>
   </div>

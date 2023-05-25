@@ -1,1 +1,14 @@
+@keyframes slide-in {
+  from {
+    transform: translatey(-50%);
+  }
+  to {
+    transform: translatey(4);
+  }
+}
 
+.animation-slower {
+  animation-name: slide-in;
+  animation-duration: .5s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out;
+}
