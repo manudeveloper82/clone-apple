@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,6 +40,8 @@ import { FooterComponent } from './component/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
+    SlickCarouselModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

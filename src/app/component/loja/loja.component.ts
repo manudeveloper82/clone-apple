@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,18 +7,15 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./loja.component.css']
 })
 export class LojaComponent {
-  TituloBlack: string ="Loja."
-  TituloGray: string ="O melhor jeito de comprar o que você ama."
-
-  constructor() { }
+  @ViewChild('carousel') carousel: any;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
-    dots: false,
-    navSpeed: 600,
-    navText: ['&#8249', '&#8250;'],
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
     responsive: {
       0: {
         items: 1
@@ -26,15 +23,23 @@ export class LojaComponent {
       400: {
         items: 2
       },
-      760: {
+      740: {
         items: 3
       },
-      1000: {
+      940: {
         items: 4
       }
     },
     nav: true
   }
-  
+
+  prevSlide() {
+    this.carousel.prev();
+  }
+
+  nextSlide() {
+    this.carousel.next();
+  }
 }
+
 

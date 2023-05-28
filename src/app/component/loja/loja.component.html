@@ -34,65 +34,80 @@
     </div>
 
   </div>
+</div>
+<div class="flex  items-center space-x-12">
+  <button class="button-prev  rounded-full bg-gray-300 hover:bg-slate-400
+    text-white w-12 h-12 hover:flex items-center justify-center ml-4 " (click)="prevSlide()">
+    <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" d="M15 19l-7-7 7-7"></path>
+    </svg>
+  </button>
 
+  <owl-carousel-o #carousel [options]="{ items: 7 }" class=" text-center w-[1100px] transition-all ">
+    <ng-template carouselSlide class="text-sm font-semibold">
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/shop/buy-mac">
+        <img class=" mb-4" src="../../../assets/img/lola e logo/monitor.png">Mac</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold  ">
+      <div class="w-[130px] h-auto">
+        <a target="_blank" href="https://www.apple.com/br/shop/buy-iphone">
+        <img class=" mb-4" src="../../../assets/img/lola e logo/quatrocell.png">iPhone</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold " >
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/shop/buy-ipad">
+        <img class="mb-4" src="../../../assets/img/lola e logo/iped.png" >iPad</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold " >
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/shop/buy-watch">
+        <img class="mr-6 mb-4" src="../../../assets/img/lola e logo/relógio.png">Apple Watch</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold ">
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/airpods/">
+        <img class=" mb-4" src="../../../assets/img/lola e logo/airpods.png" >AirPods</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold" >
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/shop/accessories/all/airtag">
+        <img class=" mb-4" src="../../../assets/img/lola e logo/raster.png">AirTag</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold ">
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/apple-tv-4k/">
+        <img class=" mb-4" src="../../../assets/img/lola e logo/controle.png">Apple TV 4K</a>
+      </div>
+    </ng-template>
+
+    <ng-template carouselSlide class="text-sm font-semibold " >
+      <div class="w-[130px]">
+        <a target="_blank" href="https://www.apple.com/br/shop/accessories/all">
+        <img class=" mb-4" src="../../../assets/img/lola e logo/doisiphones.png" >Acessórios</a>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+  <button class="button-next rounded-full bg-gray-300 hover:bg-slate-400
+   text-white w-12 h-12 flex items-center justify-center " (click)="nextSlide()">
+    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" d="M9 5l7 7-7 7"></path>
+    </svg>
+  </button>
 </div>
 
-<owl-carousel-o class=" flex text-center ml-6 md:ml-44 transition-all" >
-
-  <ng-template carouselSlide class="text-sm font-semibold ">
-    <div class="w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/shop/buy-mac">
-      <img class=" mb-4" src="../../../assets/img/lola e logo/monitor.png">Mac</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold ">
-    <div class="w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/shop/buy-iphone">
-      <img class=" mb-4" src="../../../assets/img/lola e logo/quatrocell.png">iPhone</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold " >
-    <div class="w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/shop/buy-ipad">
-      <img class="mb-4" src="../../../assets/img/lola e logo/iped.png" >iPad</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold " >
-    <div class="w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/shop/buy-watch">
-      <img class="mr-6 mb-4" src="../../../assets/img/lola e logo/relógio.png">Apple Watch</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold ">
-    <div class="w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/airpods/">
-      <img class=" mb-4" src="../../../assets/img/lola e logo/airpods.png" >AirPods</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold" >
-    <div class="w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/shop/accessories/all/airtag">
-      <img class=" mb-4" src="../../../assets/img/lola e logo/raster.png">AirTag</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold ">
-    <div class="slide w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/apple-tv-4k/">
-      <img class=" mb-4" src="../../../assets/img/lola e logo/controle.png">Apple TV 4K</a>
-    </div>
-  </ng-template>
-
-  <ng-template carouselSlide class="text-sm font-semibold " >
-    <div class="slide w-[130px]">
-      <a target="_blank" href="https://www.apple.com/br/shop/accessories/all">
-      <img class=" mb-4" src="../../../assets/img/lola e logo/doisiphones.png" >Acessórios</a>
-    </div>
-  </ng-template>
-
-</owl-carousel-o>
+como apresentar na tela mais de 4 itens
