@@ -1,0 +1,44 @@
+
+<div class="flex">
+
+  <div class=" font-semibold flex-none text-3xl mb-6 s ml-6 mt-20 md:ml-44 transition-all">
+    <h1>
+      {{title}} <span class=" text-gray-500">{{description}}</span>
+    </h1>
+  </div>
+
+</div>
+
+
+<div class="carousel-container">
+  <button class="button-prev rounded-full bg-gray-200 hover:bg-gray-500
+    text-white w-12 h-12 hover:flex hover:transition-all ml-4 items-center justify-center  transition duration-300" (click)="prevSlide()">
+    <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" d="M15 19l-7-7 7-7"></path>
+    </svg>
+  </button>
+
+  <owl-carousel-o #carousel class="transition-all"  [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let item of carouselItems" class="text-sm font-semibold" >
+      <div class="cursor-pointer h-[500px] bg-white rounded-3xl relative  px-5 py-6 w-[400px]"
+        target="_blank" [style.left.%]="carouselItems ? 40 : 0">
+        <img class="rounded-3xl w-full inset-0  " [src]="item.image">
+        <h1 class="font-bold text-3xl " [ngClass]="{'': item.bottom == 'bottom', 'just': item.bottom == 'botom'}">
+          {{item.title}}
+        </h1>
+        <p class="text-lg" [ngClass]="{'text-white': item.bottom == 'black', 'text-black': item.bottom == 'white'}"> {{item.value}}
+        </p>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+
+  <button class="button-next rounded-full bg-gray-200 hover:bg-gray-500
+    text-white w-12 h-12 flex items-center justify-center transition duration-300"
+    (click)="nextSlide()">
+    <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" d="M9 5l7 7-7 7"></path>
+    </svg>
+  </button>
+</div>
