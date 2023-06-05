@@ -9,63 +9,39 @@
 </div>
 
 
-<!-- <div class="flex flex-row  items-center"> -->
-
-  <!-- <button class="button-prev rounded-full bg-gray-300 hover:bg-slate-400
-    text-white w-12 h-12 hover:flex hover:transition-all items-center justify-center  transition duration-300" (click)="prevSlide()">
+<div class="carousel-container">
+  <button class="button-prev rounded-full bg-gray-200 hover:bg-gray-500
+    text-white w-12 h-12 hover:flex hover:transition-all ml-4 items-center justify-center  transition duration-300" (click)="prevSlide()">
     <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
       stroke="currentColor">
       <path stroke-linecap="round" d="M15 19l-7-7 7-7"></path>
     </svg>
-  </button> -->
+  </button>
 
-  <!-- <owl-carousel-o #carousel  class=" absolute text-center w-[1250px]
-    transition-all ">
-    <ng-template carouselSlide *ngFor="let item of carouselItems" class="text-sm
-      font-semibold ">
-      <a class="cursor-pointer" target="_blank" [href]="item.link">
-        <img class="relative rounded-3xl px-2 h-[500px] " [src]="item.image" >
-        <div class=" text-left ">
-          <p class="text-xs font-semibold mb-3 m-6 absolute inset-0  text-gray-400">
-            {{item.description}}
-          </p>
-          <h1 class="font-semibold ml-6 mt-12 absolute  inset-0 text-3xl  mb-1" [ngClass]="{'text-white': item.bgcolor == 'black', 'text-black': item.bgcolor == 'white'}">
-            {{item.title}}
-          </h1>
-          <p class="text-lg absolute inset-0 ml-6 mt-24" [ngClass]="{'text-white': item.bgcolor == 'black', 'text-black': item.bgcolor == 'white'}">
-            {{item.value}}
-          </p>
-        </div>
-      </a>
-    </ng-template>
-  </owl-carousel-o> -->
-<div class="container mx-auto">
-
-  <owl-carousel-o #carousel  class="transition-all" [options]="customOptions">
-    <ng-template carouselSlide *ngFor="let item of carouselItems" class="text-sm
-    font-semibold">
-    <div class="cursor-pointer h-[500px] border border-red-400 relative text-start px-5 py-6" target="_blank">
-        <img class="rounded-3xl h-[500px] absolute inset-0 -z-10" [src]="item.image" >
+  <owl-carousel-o #carousel class="transition-all"  [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let item of carouselItems" class="text-sm font-semibold" >
+      <div class="cursor-pointer h-[500px] relative text-start px-5 py-6 w-[400px]"
+        target="_blank" [style.left.%]="carouselItems ? 40 : 0">
+        <img class="rounded-3xl w-[400px] h-[500px] absolute inset-0 -z-10 flex-shrink-0 " [src]="item.image">
         <p class="text-xs font-semibold text-gray-400">
           {{item.description}}
         </p>
         <h1 class="font-bold mt-2 text-3xl " [ngClass]="{'text-white': item.bgcolor == 'black', 'text-black': item.bgcolor == 'white'}">
           {{item.title}}
         </h1>
-        <p class="text-lg" [ngClass]="{'text-white': item.bgcolor == 'black', 'text-black': item.bgcolor == 'white'}">
-          {{item.value}}
+        <p class="text-lg" [ngClass]="{'text-white': item.bgcolor == 'black', 'text-black': item.bgcolor == 'white'}"> {{item.value}}
         </p>
       </div>
-  </ng-template>
-</owl-carousel-o>
-</div>
+    </ng-template>
+  </owl-carousel-o>
 
-  <!-- <button class="button-next rounded-full bg-gray-300 relative hover:bg-slate-400
+  <button class="button-next rounded-full bg-gray-200 hover:bg-gray-500
     text-white w-12 h-12 flex items-center justify-center transition duration-300"
     (click)="nextSlide()">
-    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+    <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
       stroke="currentColor">
       <path stroke-linecap="round" d="M9 5l7 7-7 7"></path>
     </svg>
-  </button> -->
-<!-- </div> -->
+  </button>
+</div>
+

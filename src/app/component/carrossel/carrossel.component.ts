@@ -98,15 +98,16 @@ export class CarrosselComponent{
 
   @ViewChild('carousel') carousel: any;
   customOptions: OwlOptions = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     nav: false,
     dots: false,
+    margin: -70,
     navSpeed: 700,
     navText: ['', ''],
-    margin: 10,
+
     responsive: {
       0: {
         items: 1
@@ -114,8 +115,8 @@ export class CarrosselComponent{
       400: {
         items: 1
       },
-      740: {
-        items: 2
+      640: {
+        items: 3
       },
       940: {
         items: 3

@@ -1,2 +1,23 @@
-.carouselitems {
+.carousel-container {
+  position: relative;
+  overflow: hidden;
 }
+
+.button-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 6;
+}
+
+.button-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 6;
+}
+
+
+
