@@ -22,6 +22,54 @@ export class CarrosselComponent{
 
    carouselItems: CarouselItem[] = [
     {
+      link:"https://www.apple.com/br/shop/buy-mac/macbook-air",
+      image:"../../../assets/img/carrossel/nottop.jpeg",
+      description:"MACBOOK AIR DE 15 POLEGADAS",
+      title:"Espaçoso sem perder a fineza.",
+      value:"A partir de R$ 14.999",
+      bgcolor: "white"
+    },
+    {
+      link:"https://www.apple.com/br/shop/buy-ipad/ipad-air",
+      image:"../../../assets/img/carrossel/tab vent.jpeg",
+      description:"IPAD AIR",
+      title:"Cor e potência no ar.",
+      value:"A partir de R$ 6.999",
+      bgcolor: "black"
+    },
+    {
+      link:"https://www.apple.com/br/shop/product/MRTL3AM/A/pulseira-esportiva-edi%C3%A7%C3%A3o-orgulho-para-caixa-de-41-mm-p-m",
+      image:"../../../assets/img/carrossel/relogio mix.jpeg",
+      description:"PULSEIRA ESPORTIVA EDIÇÃO ORGULHO",
+      title:"O orgulho vai se espalhar.",
+      value:"A partir de R$ 499",
+      bgcolor: "white"
+    },
+    {
+      link:"https://www.apple.com/br/shop/buy-iphone/iphone-14-pro",
+      image:"../../../assets/img/carrossel/4phone.jpg" ,
+      description:"IPHONE 14 PRO",
+      title:"Pro. E além.",
+      value:"A partir de R$ 9.599",
+      bgcolor: "black"
+    },
+    {
+      link:"https://www.apple.com/br/shop/buy-mac/mac-studio",
+      image:"../../../assets/img/carrossel/m2max.jpeg",
+      description:"NAC STUDIO",
+      title:"Com a potência do M2 Max e M2 Ultra.",
+      value:"A partir de R$ 22.999",
+      bgcolor: "white"
+    },
+    {
+      link:"https://www.apple.com/br/shop/buy-ipad/ipad-pro",
+      image:"../../../assets/img/carrossel/iPad.jpg",
+      description:"MACBOOK PRO DE 14 E 16 POL.",
+      title:"Desbrava fronteiras. Derruba barreiras.",
+      value:"A partir de R$ 23.999",
+      bgcolor: "black"
+    },
+    {
       link: "https://www.apple.com/br/shop/buy-iphone/iphone-14-pro",
       image: "../../../assets/img/carrossel/6phones.jpg",
       description:"IPHONE 14",
@@ -46,14 +94,6 @@ export class CarrosselComponent{
       bgcolor: "white"
     },
     {
-      link:"https://www.apple.com/br/shop/buy-iphone/iphone-14-pro",
-      image:"../../../assets/img/carrossel/4phone.jpg" ,
-      description:"IPHONE 14 PRO",
-      title:"Pro. E além.",
-      value:"A partir de R$ 9.599",
-      bgcolor: "black"
-    },
-    {
       link:"https://www.apple.com/br/shop/buy-ipad/ipad-pro",
       image:"../../../assets/img/carrossel/iPadPro.jpg",
       description:"IPAD PRO",
@@ -68,14 +108,6 @@ export class CarrosselComponent{
       title:"A aventura te espera.",
       value:"A partir de R$ 10.299",
       bgcolor: "white"
-    },
-    {
-      link:"https://www.apple.com/br/shop/buy-ipad/ipad-pro",
-      image:"../../../assets/img/carrossel/iPad.jpg",
-      description:"MACBOOK PRO DE 14 E 16 POL.",
-      title:"Desbrava fronteiras. Derruba barreiras.",
-      value:"A partir de R$ 23.999",
-      bgcolor: "black"
     },
     {
       link:"https://www.apple.com/br/shop/buy-mac/mac-mini",
@@ -104,7 +136,7 @@ export class CarrosselComponent{
     pullDrag: true,
     nav: false,
     dots: false,
-    margin: -70,
+    margin: -96,
     navSpeed: 700,
     navText: ['', ''],
 
@@ -116,7 +148,7 @@ export class CarrosselComponent{
         items: 1
       },
       640: {
-        items: 3
+        items: 2
       },
       940: {
         items: 3

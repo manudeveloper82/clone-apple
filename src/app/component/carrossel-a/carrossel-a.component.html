@@ -1,4 +1,4 @@
-
+<!--
 <div class="flex">
 
   <div class=" font-semibold flex-none text-3xl mb-6 s ml-6 mt-20 md:ml-44 transition-all">
@@ -7,7 +7,7 @@
     </h1>
   </div>
 
-</div>
+</div>*/
 
 
 <div class="carousel-container">
@@ -21,7 +21,7 @@
 
   <owl-carousel-o #carousel class="transition-all"  [options]="customOptions">
     <ng-template carouselSlide *ngFor="let item of carouselItems" class="text-sm font-semibold" >
-      <div class="cursor-pointer h-[500px] bg-white rounded-3xl relative  px-5 py-6 w-[400px]"
+      <div class="cursor-pointer h-[500px] bg-white rounded-3xl relative px-5 py-6 w-[400px]"
         target="_blank" [style.left.%]="carouselItems ? 40 : 0">
         <img class="rounded-3xl w-full inset-0  " [src]="item.image">
         <h1 class="font-bold text-3xl " [ngClass]="{'': item.bottom == 'bottom', 'just': item.bottom == 'botom'}">
@@ -41,4 +41,4 @@
       <path stroke-linecap="round" d="M9 5l7 7-7 7"></path>
     </svg>
   </button>
-</div>
+</div>-->
