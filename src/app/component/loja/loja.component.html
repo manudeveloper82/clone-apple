@@ -33,10 +33,10 @@
     </svg>
   </button>
 
-  <owl-carousel-o #carousel class=" text-center w-[1200px] mr-12 transition-all" [options]="customOptions">
+  <owl-carousel-o #carousel class=" text-center w-[900px] md:w-[1190px] transition-all" [options]="customOptions">
 
-    <ng-template carouselSlide class="text-sm font-semibold" *ngFor="let item of carouselItems">
-      <div class="w-[130px] ml-24">
+    <ng-template carouselSlide class="text-sm font-semibold transition-all relative" *ngFor="let item of carouselItems">
+      <div class="w-[130px] md:ml-24">
         <a target="_blank" href="{{item.link}}">
         <img class=" mb-4" src="{{item.image}}">{{item.description}}</a>
       </div>
@@ -44,7 +44,7 @@
 
   </owl-carousel-o>
 
-  <button class="button-next rounded-full bg-gray-200 hover:bg-gray-500
+  <button class="button-next rounded-full flex-none bg-gray-200 hover:bg-gray-500 relative
    text-white w-12 h-12 flex items-center justify-center transition duration-300" (click)="nextSlide()">
     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
       stroke="currentColor">

@@ -91,6 +91,7 @@ export class LojaComponent {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
+    margin:-210,
     navText: ['', ''],
     responsive: {
       0: {
