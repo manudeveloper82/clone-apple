@@ -1,55 +1,57 @@
-<div class="flex flex-row mb-24 space space-x-40 "  >
+<div class="container mx-auto">
+  <div class="flex flex-row mb-24 space space-x-40  "  >
 
-  <h1 class=" font-semibold flex-none ml-6 md:ml-44 text-5xl transition-all">{{span}}.
-    <span class="text-gray-500">
-      {{title}} <br>
-      {{description}}
-    </span>
-  </h1>
+    <h1 class=" font-semibold flex-none ml-6  lg:ml-64 mt-4 text-5xl transition-all">{{span}}.
+      <span class="text-gray-500">
+        {{title}} <br>
+        {{description}}
+      </span>
+    </h1>
 
-  <div class="flex-none space-y-2 text-base">
+    <div class="flex-none space-y-2 text-base">
 
-    <div class="flex flex-row" *ngFor="let item of contatoItems">
-      <img class="w-9 h-9 mt-2 mr-2"
-      src="{{item.image}}">
-      <div>
-        <h2 class="font-medium">{{item.title}}</h2>
-        <a class="text-blue-600"
-          href="{{item.link}}">
-          {{item.description}}
-        </a>
+      <div class="flex flex-row" *ngFor="let item of contatoItems">
+        <img class="w-9 h-9 mt-2 mr-2"
+        src="{{item.image}}">
+        <div>
+          <h2 class="font-medium">{{item.title}}</h2>
+          <a class="text-blue-600"
+            href="{{item.link}}">
+            {{item.description}}
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<div class=" button flex  items-center space-x-4 ">
-  <button class="button-prev  rounded-full bg-gray-200 hover:bg-gray-500
-    text-white w-12 h-12 hover:flex items-center justify-center ml-4 transition duration-300 " (click)="prevSlide()">
-    <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke="currentColor">
-      <path stroke-linecap="round" d="M15 19l-7-7 7-7"></path>
-    </svg>
-  </button>
+  <div class=" button flex items-center space-x-4 w-[900px]">
+    <button class="button-prev rounded-full bg-gray-200 hover:bg-gray-500
+      text-white w-12 h-12 hover:flex items-center justify-center ml-4 lg:ml-44 transition duration-300 " (click)="prevSlide()">
+      <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
 
-  <owl-carousel-o #carousel class=" text-center w-[900px] md:w-[1190px] transition-all" [options]="customOptions">
+    <owl-carousel-o #carousel class=" text-center w-[900px] md:w-[1190px] transition-all" [options]="customOptions">
 
-    <ng-template carouselSlide class="text-sm font-semibold transition-all relative" *ngFor="let item of carouselItems">
-      <div class="w-[130px] md:ml-24">
-        <a target="_blank" href="{{item.link}}">
-        <img class=" mb-4" src="{{item.image}}">{{item.description}}</a>
-      </div>
-    </ng-template>
+      <ng-template carouselSlide class="text-sm font-semibold transition-all relative" *ngFor="let item of carouselItems">
+        <div class="w-[120px] md:ml-4">
+          <a target="_blank" href="{{item.link}}">
+          <img class=" mb-4" src="{{item.image}}">{{item.description}}</a>
+        </div>
+      </ng-template>
 
-  </owl-carousel-o>
+    </owl-carousel-o>
 
-  <button class="button-next rounded-full flex-none bg-gray-200 hover:bg-gray-500 relative
-   text-white w-12 h-12 flex items-center justify-center transition duration-300" (click)="nextSlide()">
-    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke="currentColor">
-      <path stroke-linecap="round" d="M9 5l7 7-7 7"></path>
-    </svg>
-  </button>
+    <button class="button-next rounded-full flex-none bg-gray-200 hover:bg-gray-500 relative
+     text-white w-12 h-12 items-center justify-center transition duration-300" (click)="nextSlide()">
+      <svg class="w-12 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
 </div>
 

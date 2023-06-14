@@ -95,7 +95,7 @@ export class LojaComponent {
     navText: ['', ''],
     responsive: {
       0: {
-        items: 1
+        items: 2
       },
       400: {
         items: 3
@@ -104,7 +104,7 @@ export class LojaComponent {
         items: 4
       },
       940: {
-        items: 6
+        items: 7
       }
     },
     nav: false
