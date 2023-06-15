@@ -1,23 +1,25 @@
-<div class="flex">
+<div class="flex container mx-auto">
 
-  <div class=" font-semibold flex-none text-3xl mb-6 s ml-6 mt-6 md:ml-44 transition-all">
+  <div class=" font-semibold flex-none text-3xl mb-6 s ml-6 mt-16 lg:ml-[280px] transition-all">
     <h1>
       {{title}} <span class=" text-gray-400">{{description}}</span>
     </h1>
   </div>
-
 </div>
-<div class="carousel-container w-[1350px] flex flex-row -space-x-14">
-  <div *ngFor="let item of especialItems" class="cursor-pointer relative  text-start px-5 py-6 ml-4
-    md:ml-44 w-[480px] h-[505px]"
-    target="_blank" >
-    <img class="rounded-3xl h-[500px] absolute inset-0 -z-10" [src]="item.image">
-    <p class="text-xs m-2 font-semibold  text-gray-600">
-      {{item.description}}
-    </p>
-    <h1 class="tracking-tight font-semibold m-2 mr-20 text-3xl " [ngClass]="{'text-white': item.bgcolor
-      == 'gray', 'text-black': item.bgcolor == 'white'}">
-      {{item.title}}
-    </h1>
+
+<div class="container mx-auto">
+  <div class="carousel-container w-[1350px] flex flex-row lg:ml-[115px] -space-x-14">
+    <div *ngFor="let item of especialItems" class="cursor-pointer relative  text-start px-5 py-6 ml-4
+      md:ml-44 w-[480px] h-[505px]"
+      target="_blank" >
+      <img class="rounded-3xl h-[500px] absolute inset-0 -z-10" [src]="item.image">
+      <p class="text-xs m-2 font-semibold  text-gray-600">
+        {{item.description}}
+      </p>
+      <h1 class="tracking-tight font-semibold m-2 mr-20 text-3xl " [ngClass]="{'text-white': item.bgcolor
+        == 'gray', 'text-black': item.bgcolor == 'white'}">
+        {{item.title}}
+      </h1>
+    </div>
   </div>
 </div>

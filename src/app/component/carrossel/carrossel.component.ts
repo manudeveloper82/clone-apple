@@ -78,6 +78,14 @@ export class CarrosselComponent{
       bgcolor: "white"
     },
     {
+      link:"https://www.apple.com/br/shop/buy-mac/mac-mini",
+      image:"../../../assets/img/carrossel/MecMin.jpg",
+      description:"MAC MINI",
+      title:"Mais músculo. Mais cérebro.",
+      value:"A partir de R$ 7.499",
+      bgcolor: "black"
+    },
+    {
       link:"https://www.apple.com/br/shop/buy-ipad/ipad",
       image:"../../../assets/img/carrossel/iMac.jpg",
       description:"IPAD",
@@ -109,22 +117,6 @@ export class CarrosselComponent{
       value:"A partir de R$ 10.299",
       bgcolor: "white"
     },
-    {
-      link:"https://www.apple.com/br/shop/buy-mac/mac-mini",
-      image:"../../../assets/img/carrossel/MecMin.jpg",
-      description:"MAC MINI",
-      title:"Mais músculo. Mais cérebro.",
-      value:"A partir de R$ 7.499",
-      bgcolor: "black"
-    },
-    {
-      link:"https://www.apple.com/br/shop/watch/bands",
-      image:"../../../assets/img/carrossel/pulseiras.jpg",
-      description:"ACESSÓRIOS",
-      title:"Novas cores. Todos os estilos.",
-      value:"A partir de R$ 7.599",
-      bgcolor: "white"
-    },
 
   ];
 
@@ -136,13 +128,13 @@ export class CarrosselComponent{
     pullDrag: true,
     nav: false,
     dots: false,
-    margin: -96,
+    margin: -775,
     navSpeed: 700,
     navText: ['', ''],
 
     responsive: {
       0: {
-        items: 1
+        items: 0
       },
       400: {
         items: 1
@@ -150,7 +142,7 @@ export class CarrosselComponent{
       640: {
         items: 2
       },
-      940: {
+      960: {
         items: 3
       }
     },
