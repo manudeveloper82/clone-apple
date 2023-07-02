@@ -1,11 +1,15 @@
 import { Component, OnInit, HostListener, HostBinding } from '@angular/core';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  logo: string = "https://www.apple.com/br/"
+  logoImg: string = "../../../assets/img/lola e logo/maçã.png"
+
   isFixedMenu: boolean = false;
   menuOpened: boolean = false;
 

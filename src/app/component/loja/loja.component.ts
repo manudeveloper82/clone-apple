@@ -86,7 +86,7 @@ export class LojaComponent {
   @ViewChild('carousel') carousel: any;
   customOptions: OwlOptions = {
     loop: false,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
     dots: false,
