@@ -58,18 +58,18 @@ export class CarrosselAComponent {
     pullDrag: true,
     nav: false,
     dots: false,
-    margin: -530,
+    margin: 160,
     navSpeed: 700,
     navText: ['', ''],
 
     responsive: {
       0: {
+        items: 0
+      },
+      375: {
         items: 1
       },
-      400: {
-        items: 1
-      },
-      640: {
+      667: {
         items: 2
       },
       940: {

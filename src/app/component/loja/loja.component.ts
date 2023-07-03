@@ -87,7 +87,7 @@ export class LojaComponent {
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
     navSpeed: 700,

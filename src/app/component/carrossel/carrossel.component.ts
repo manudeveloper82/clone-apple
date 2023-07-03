@@ -128,7 +128,7 @@ export class CarrosselComponent{
     pullDrag: true,
     nav: false,
     dots: false,
-    margin: -775,
+    margin: -80,
     navSpeed: 700,
     navText: ['', ''],
 
@@ -140,7 +140,7 @@ export class CarrosselComponent{
         items: 1
       },
       640: {
-        items: 2
+        items: 3
       },
       960: {
         items: 3
